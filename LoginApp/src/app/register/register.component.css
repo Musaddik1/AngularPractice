@@ -1,0 +1,19 @@
+.maincard{
+
+    display:flex;
+    justify-content: center;
+    height: 93vh;
+    width: 600px;
+    margin-top: 5px;
+    
+    
+}
+.main{
+    display: flex;
+    justify-content: center
+}
+.toolbar{
+    width: 635px;
+    margin-top: -15px;
+
+}

@@ -1,0 +1,42 @@
+<div class="main" fxLayout="column" fxLayoutAlign="center center">
+    <mat-card class="maincard">
+        <div fxLayout="column" fxLayoutAlign="space-between center">
+
+            <div style="margin-top: 20px; text-align: center;">
+                <span><h1>Subscribe</h1></span>
+            </div>
+            <div>
+                <span>Join our mailing list. We write rarely, but only with
+                </span><br>
+                <div style="text-align: center;margin-left: -2px;"> the best content</div>
+                
+            </div>
+            <div>
+                <a href="" style="text-decoration: none; color: blue;margin-top: 25px; text-align: center;"><h3 style="margin-top: 10px;">See the last newsletter</h3> </a>
+            </div>
+        
+            <div style="margin-top: -30px;">
+                <mat-form-field appearance="outline" style="width: 350px;margin-top: 30px;width: 300px;">
+                    <mat-label>name</mat-label>
+                    <input matInput placeholder="name" [(ngModel)]="name" required/>
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                    </mat-form-field>
+            </div>
+            <div style="margin-top: -30px;">
+                <mat-form-field appearance="outline" style="width: 350px;margin-top: 30px;width: 300px;">
+                    <mat-label>email</mat-label>
+                    <input matInput placeholder="email" [(ngModel)]="email" required/>
+                    <mat-icon matSuffix>email</mat-icon>
+                    </mat-form-field>
+            </div>
+            <div style="margin-top: -30px;">
+                <!-- <mat-form-field appearance="outline" style="width: 350px;margin-top: 30px;width: 300px;"> -->
+                    <button mat-raised-button color="primary" style="width: 300px;margin-top: 40px;">Subscribe</button>
+
+                   
+            </div>
+
+        </div>
+    </mat-card>
+
+</div>

@@ -1,0 +1,21 @@
+.maincard{
+  display: flex;
+  justify-content:center;
+  height: 79vh;
+    width: 600px;
+  margin-top: 25px;
+  
+ 
+  
+}
+.main{
+  display: flex;
+  justify-content: center;
+ 
+  
+}
+.email
+{
+  justify-content: center;
+  width :243px;
+}

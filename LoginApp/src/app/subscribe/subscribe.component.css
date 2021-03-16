@@ -1,0 +1,13 @@
+.main{
+    justify-content: center;
+    display: flex;
+}
+.maincard{
+
+    justify-content: center;
+    display: flex;
+    height:70vh;
+    width: 450px;
+    margin-top: 50px;
+    
+}
