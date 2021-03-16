@@ -1,0 +1,86 @@
+<div class="main">
+    <mat-card class="maincard">
+        <div fxLayout="row" fxLayoutAlign="start center">
+          <mat-card-title style="text-align: center;">Currency Convertor</mat-card-title>
+          <div *ngIf="change" style="text-align: center;color: red;">{{message}}</div>
+          <div style="text-align: center;float: left;margin-left: -70px;margin-top: 30px;height: 100px;">
+            <mat-form-field appearance="outline" style="height: 100px;">
+              <!-- mat-label>amount</mat-label> -->
+              <input matInput placeholder="amount" (keyup)="onPressEnter($event)" style="font-weight: bold;"(click)="Change()" >
+             
+            </mat-form-field>
+          </div>
+
+            <mat-form-field appearance="outline" style="margin-left:20px; float:left;width: 250px;margin-top: 30px;font-weight: bold;">
+                <!-- <mat-label>country</mat-label> -->
+                <select matNativeControl required id="selectId" (change)="selectChangeHandler($event)">
+                  <option label="--select country --"></option>
+                  <option [value]="country.countryname" *ngFor="let country of countries">
+                    {{country.countryname}}
+                    </option>
+                </select>
+            
+                <div *ngIf="countryName1"  style="width: 10%; height: 10%; margin-left: 175px;margin-top: -23px;">
+                    <img src="{{url1}}" class="img1"/>
+                 </div>
+              </mat-form-field>
+              <button (click)="OnSwap()" style="height: 30px;margin-top: 45px;width: 30px;margin-left: 7px;" class="button1">
+               <mat-icon >swap_horiz
+               </mat-icon>
+              </button>
+              <mat-form-field appearance="outline" style="font-weight: bold; margin-left: 6px;width: 250px;float: right;margin-right:14px;margin-top: 30px; height: 64px;" >
+                  <!-- <mat-label>country</mat-label> -->
+                  
+
+                <select matNativeControl required id="selectId1"  (change)="selectChangeHandler1($event)" >
+                  <option label="--select country --" style="float: left;"></option>
+                  <option [value]="country.countryname" *ngFor="let country of countries" >
+                    
+                    {{country.countryname}}
+                    </option>
+                 </select>
+                 <div *ngIf="countryName2"  style="width: 10%; height: 10%; margin-left: 175px;margin-top: -23px;">
+                    <img src="{{url2}}" class="img1"/>
+                  
+                 </div>
+               
+
+                
+              </mat-form-field>
+             
+
+               <div style="text-align: center; margin-left: 708px;margin-top: -28px;">
+                 <button mat-button style="background-color: rgb(65, 111, 236); color: white;margin-right: -80px;
+                 height: 53px;
+                 margin-top: -20px;" (click)="onConvert()">
+                  <mat-icon>keyboard_arrow_right
+                  </mat-icon>
+                </button>
+               </div>
+
+
+               <div *ngIf="matShow" style="margin-top: 20px; font-style: normal;font-family: 'Times New Roman', Times, serif;font-weight: bold;" >
+                <span style="margin-left: -470px;">{{amount}} {{code1}} = {{data}}</span>
+                
+              </div>
+
+        </div>
+        
+      
+        
+         
+     
+ 
+
+
+    </mat-card>
+    
+     <!-- <mat-card class="secondmatcard" *ngIf="matShow">
+      <div style="font-style: normal;font-family: 'Times New Roman', Times, serif;font-weight: bold; text-align: right;" >
+        {{amount}} {{country1.countrycode}} = {{result}}
+        
+      </div>
+
+    </mat-card>  -->
+
+</div>

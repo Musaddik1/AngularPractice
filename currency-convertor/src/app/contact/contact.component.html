@@ -1,0 +1,61 @@
+<div class="main" fxLayout="column" fxLayoutAlign="stretch">
+    <mat-card class="maincard">
+        <div fxLayout="column" fxLayoutAlign="stretch">
+            <mat-toolbar class="toolbar">
+                <div>
+                 <button mat-icon-button class="example-icon" style="margin-left:215px;color: white;" aria-label="Example icon-button with menu icon">
+                     <mat-icon>menu</mat-icon>
+                   </button>
+                   
+                </div>
+                <div>
+                 <p style="margin-left: 15px;">
+                       <input matInput placeholder="seacrch" class="inputfield" (keyup)="search($event)">
+                      
+                   </p>
+                </div>
+                <div style="margin-left: 170px;color: white;">
+                <button mat-icon-button class="example-icon" style="margin-left:-225px;" aria-label="Example icon-button with menu icon">
+                 <mat-icon>more_vert</mat-icon>
+               </button>
+               
+            </div>
+            <div style="margin-left: 170px;color: white;">
+             <button mat-icon-button class="example-icon" style="margin-left:-470px;" aria-label="Example icon-button with menu icon">
+              <mat-icon>account_circle</mat-icon>
+            </button>
+            
+         </div>
+                 <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+                   <mat-icon>menu</mat-icon>
+                 </button>
+                 <span>My App</span>
+                 <span class="example-spacer"></span>
+                 <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+                   <mat-icon>favorite</mat-icon>
+                 </button>
+                 <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                   <mat-icon>share</mat-icon>
+                 </button> -->
+               </mat-toolbar>
+
+               <div style="margin-left: 0px;margin-top: 20px;">
+                <mat-selection-list > <!-- | paginate: { itemsPerPage: count, currentPage: p}  -->
+                    <mat-list-item role="listitem" *ngFor="let contact of contacts">
+                      <div  class="number">
+                        <button mat-icon-button (click)="details()" style="margin-left: 15px;"> {{contact.name}}</button>
+                      <span style="margin-left: 180px;"> {{contact.number}}</span>
+                    </div>
+ 
+                    </mat-list-item>
+                  
+                  </mat-selection-list>
+               </div>
+              <!--  <div class="text-right">
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+              </div> -->
+             
+        </div>        
+           
+    </mat-card>
+</div>

@@ -1,0 +1,47 @@
+.main{
+
+    justify-content: center;
+    display: flex;
+}
+.maincard{
+
+    justify-content: center;
+    display: flex;
+    height: 50vh;
+    width: 850px;
+    margin-top: 30px;
+    
+    
+}
+
+.secondmatcard{
+    justify-content: center;
+    display: flex;
+    width: 850px;
+    height: 30vh;
+    margin-top: 175px;
+    margin-left: -883px;
+    
+    
+    
+}
+
+.img1{
+    margin-left: -11px;
+    margin-top: -2px;
+    
+    height: 24px;
+    width: 30px;
+}
+.button1{
+    /* outline: none;
+    border: none;
+    background-color: transparent;
+    overflow: hidden; */
+    /* background-color: turquoise; */
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
