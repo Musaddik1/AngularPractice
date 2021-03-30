@@ -1,0 +1,29 @@
+<div class="add-item">
+    <!-- <h3 style="float: left;margin-top: 8px;margin-left: 10px;">Test</h3>
+    <h3 style="margin-left: 140px;margin-top: 8px;">1500</h3> -->
+        
+                
+    <div *ngFor="let detail of details" >
+        
+        <div *ngIf="detail.check">
+                   <input matInput type="number" [(ngModel)]="detail.amount" class="amount">
+        <input matInput type="text" [(ngModel)]="detail.description" class="description">
+        <button mat-button class="edit" (click)="openDialog(detail)" >Edit</button>
+        
+        <!-- <div (click)="onCloseClick()">
+            <button mat-button class="button1">
+                <mat-icon>clear</mat-icon>
+            </ -->
+        <!-- </div> -->
+        <button class="button1" mat-button (click)="deleteItem(detail)">
+            <mat-icon >clear</mat-icon>
+        </button>
+    </div>
+ 
+             
+  </div>
+  
+ 
+
+    
+</div>

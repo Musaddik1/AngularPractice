@@ -1,0 +1,32 @@
+<div>
+    <div class="maindiv">
+        <h1>budget calculator</h1>
+    </div>
+    <div class="second-div">
+        <h1 style="margin-top: 50px;">{{amount}}</h1>
+    </div>
+    <div class="center">
+          
+    <div class="third-div" >
+        <input type="number" placeholder="amount" class="amount-input" [(ngModel)]="amount">
+        <input type="text" placeholder="Description" class="description-input" [(ngModel)]="description" >
+        <button mat-button  style="background-color: blueviolet;height: 31px;
+        width: 15px;margin-left: 20px;" (click)='onClick()'>Add</button>
+    </div>
+
+    </div>
+    <div class="income">
+        <h1>Income</h1>
+        <div *ngIf="amount1>0">
+        <app-add-item [details]='details'></app-add-item>
+        </div>
+        
+    </div>
+    <div class="expenses" >
+        <h1>Expenses</h1>
+        <div *ngIf="amount1<0">
+        <app-add-item [details]='details'></app-add-item>
+    </div>
+        
+    </div>
+</div>

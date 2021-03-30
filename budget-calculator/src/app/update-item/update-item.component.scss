@@ -1,0 +1,32 @@
+.add-item{
+
+    display: flex;
+    text-align: center;
+    
+    height: 31px;
+}
+
+
+.formfield{
+    height: 40px;
+    width: 50px;
+}
+.amount{
+ 
+    width: 60px;
+    height: 25px;
+    margin-left: -5px;
+}
+.description{
+    
+    height: 25px;
+    margin-left: 5px;
+}
+.edit{
+    height: 25px;
+    
+    background-color: blueviolet;
+    margin-left: 13px;
+    height: 30px;
+    color: white;
+}
