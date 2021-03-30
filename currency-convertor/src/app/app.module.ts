@@ -22,6 +22,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatListModule} from '@angular/material/list';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { NgxPaginationModule } from 'ngx-pagination';
+import {MatTableModule} from '@angular/material/table';
+
+import { TableComponent } from './table/table.component';
+import {MatSortModule} from '@angular/material/sort';
+import { PracticeComponent } from './practice/practice.component';
 
 
 
@@ -32,7 +37,9 @@ import { NgxPaginationModule } from 'ngx-pagination';
   declarations: [
     AppComponent,
     CurrencyComponent,
-    ContactComponent
+    ContactComponent,
+    TableComponent,
+    PracticeComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +47,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     ScrollingModule,
     MatSnackBarModule,
     MatToolbarModule,
+    MatSortModule,
+    MatTableModule,
     NgSelectModule,
     NgxPaginationModule,
     MatInputModule,

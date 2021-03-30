@@ -2,7 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 
-interface MyCountry{
+interface Country{
+  id:number;
   code:any;
   countrycode:any;
   countryname:any
@@ -16,7 +17,7 @@ export class CurrencyService {
   constructor(private http:HttpClient) { }
 
   public getCountry(url:any){
-    return this.http.get<MyCountry>(url);
+    return this.http.get<Country>(url);
   }
 
   public getCurrency(url:any){
@@ -24,6 +25,9 @@ export class CurrencyService {
   }
 
   public getContact(url:any){
+    return this.http.get(url);
+  }
+  public getTable(url:any){
     return this.http.get(url);
   }
 }
