@@ -1,0 +1,12 @@
+<mat-toolbar class="toolbar">
+    <button mat-button [matMenuTriggerFor]="menu" style="color:white;">Menu</button>
+<mat-menu #menu="matMenu" >
+  <button mat-menu-item routerLink="/dashboard">Dashboard</button>
+  <button mat-menu-item>Sales</button>
+  <button mat-menu-item>Orders</button>
+  <button mat-menu-item>Customers</button>
+  <button mat-menu-item>Products</button>
+</mat-menu>
+
+
+</mat-toolbar>

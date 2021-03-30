@@ -1,0 +1,55 @@
+.list{
+    font-size: 5rem;
+    text-align: center;
+    flex: 1;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    
+}
+.main{
+    justify-content: center;
+    display: flex;
+}
+
+.card{
+
+    width: 50%;
+    padding: 20px;
+    height: 200px;
+    margin-top: 30px;
+    background-color: rgb(209, 250, 248);
+}
+.item1{
+    height: 30px;
+    width: 65%;
+    margin-left: 121px;
+    border: none
+}
+
+.item2{
+    height: 30px;
+    width: 65%;
+    margin-left: 38px;
+    border: none
+}
+.details{
+    height: 60px;
+    width: 50%;
+    background-color: darkgrey;
+    
+    display: flex;
+    margin-left: 340px;
+    margin-top: 40px;
+}
+.button1{
+    height: 33px;
+    margin-top: 16px;
+    margin-left: 80px;
+    text-align: center;
+    width: 51px;
+    border: none;border-radius: 5px;background-color: darkorange;
+}
+.button2{
+    height: 33px;margin-top: 16px;text-align: center;width: 51px;
+    border-radius: 5px;border: none;margin-left: 60px;background-color: tomato;
+}
