@@ -1,0 +1,23 @@
+.main{
+    justify-content: center;
+    display: flex;
+}
+.card{
+    width: 25%;
+    justify-content: center;
+    display: flex;
+    height: 50vh;
+    margin-top: 70px;
+    border-radius: 20px;
+
+}
+
+.example-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+  }
+  
+  .example-radio-button {
+    margin: 5px;
+  }

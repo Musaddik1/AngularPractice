@@ -1,0 +1,19 @@
+<div class="main" fxLayout="column" fxLayoutAlign="center center">
+    <mat-card class="card">
+        <mat-card-title>
+            Voting
+        </mat-card-title>
+        <mat-card-content style="margin-top: 43px;
+        margin-left: -72px;">
+            <mat-radio-group
+  aria-labelledby="example-radio-group-label"
+  class="example-radio-group"
+  [(ngModel)]="selectCandidate">
+  <mat-radio-button class="example-radio-button" *ngFor="let candidate of candidates" [value]="candidate">
+    {{candidate.firstName}}
+  </mat-radio-button>
+</mat-radio-group>
+<button mat-raised-button color="primary" (click)="vote(selectCandidate)">vote</button>
+        </mat-card-content>
+    </mat-card>
+</div>

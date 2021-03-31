@@ -12,6 +12,16 @@ import { FormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import { ListComponent } from './list/list.component';
+import { ArrowFunctionComponent } from './arrow-function/arrow-function.component';
+import { ClassesComponent } from './classes/classes.component';
+import { DestructuringComponent } from './destructuring/destructuring.component';
+import { MapsComponent } from './maps/maps.component';
+import { ParametersComponent } from './parameters/parameters.component';
+import { ScopandletComponent } from './scopandlet/scopandlet.component';
+import { SetsComponent } from './sets/sets.component';
+import { TemplateStringsComponent } from './template-strings/template-strings.component';
+import { WeakMapAndWeakSetComponent } from './weak-map-and-weak-set/weak-map-and-weak-set.component';
 
 
 
@@ -19,7 +29,17 @@ import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    ListComponent,
+    ArrowFunctionComponent,
+    ClassesComponent,
+    DestructuringComponent,
+    MapsComponent,
+    ParametersComponent,
+    ScopandletComponent,
+    SetsComponent,
+    TemplateStringsComponent,
+    WeakMapAndWeakSetComponent
   ],
   imports: [
     BrowserModule,

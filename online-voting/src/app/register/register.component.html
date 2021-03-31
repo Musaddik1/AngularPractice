@@ -1,0 +1,40 @@
+<mat-toolbar color="primary" class="toolbar">
+    <h1 style="text-align: center;">REGISTER</h1>
+</mat-toolbar>
+<div class="main" fxLayout="column" fxLayoutAlign="center center">
+    <mat-card class="card">
+      <mat-card-content>
+        <mat-form-field class="full-width" style="margin-top: 20px;">
+            <mat-label>Firstname</mat-label>
+            <input type="text" matInput placeholder="Firstname" [(ngModel)]="register.firstName">
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Lastname</mat-label>
+            <input type="text" matInput placeholder="Lastname" [(ngModel)]="register.lastName">
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Email</mat-label>
+            <input type="text" matInput placeholder="Email" [(ngModel)]="register.email">
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Username</mat-label>
+            <input type="text" matInput placeholder="Username" [(ngModel)]="register.userName">
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput placeholder="Password" [(ngModel)]="register.password">
+        </mat-form-field>
+        <div class="button">
+            <button mat-raised-button color="primary" (click)="onRegister()" >REGISTER</button>
+        </div>
+
+      </mat-card-content> 
+      
+          
+
+    </mat-card>
+</div>

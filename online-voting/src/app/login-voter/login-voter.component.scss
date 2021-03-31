@@ -1,0 +1,29 @@
+.card{
+
+    display: flex;
+
+    width: 30%;
+    height: 40vh;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 7%
+
+}
+.full-width{
+   justify-content: left;
+    width: 80%;
+    
+    
+}
+.login{
+    text-align: center;
+    margin-top: 40px;
+    margin-right: -200px;
+    margin-left: 130px;
+    color: darkgreen;
+    font-family: 'lato';
+
+}
