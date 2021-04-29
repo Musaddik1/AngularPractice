@@ -1,0 +1,239 @@
+<mat-toolbar style="background-color: white;">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="sidenav.toggle()">
+      <mat-icon style="color: grey;">menu</mat-icon>
+    </button>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="">
+    </button>
+
+    <div class="search">
+        <mat-card class="card">
+            <button mat-icon-button style="margin-top: -10px;margin-left: -10px;">
+                <mat-icon style="color: grey;">
+                    search
+                </mat-icon>
+            </button>
+            <input style="margin-top: -8px;font-family: 'Lato';font-size: large;" class="input" matInput type="text" placeholder="search email">
+            <button mat-icon-button style="margin-top: -10px;margin-left: 10px;">
+                <mat-icon style="color: grey;">
+                    arrow_drop_down
+                </mat-icon>
+            </button>
+  
+        </mat-card>
+        <button mat-icon-button style="margin-left: 200px;margin-top: 5px;">
+            <mat-icon style="color: grey;">
+                help_outline
+            </mat-icon>
+        </button>
+
+        <button mat-icon-button style="margin-left: 10px;margin-top: 5px;">
+            <mat-icon style="color: grey;">
+            
+                <span class="material-icons-outlined">
+                    settings
+                    </span>
+            </mat-icon>
+        </button>
+
+
+        <button mat-icon-button style="margin-left: 10px;margin-top: 5px;">
+            <mat-icon style="color: grey;">
+            
+                <span class="material-icons-outlined">
+                    apps
+                    </span>
+            </mat-icon>
+        </button>
+
+        <button mat-icon-button style="margin-left: 10px;margin-top: 5px;">
+            <mat-icon style="color: grey;">
+            
+                <span class="material-icons-outlined">
+                    person
+                    </span>
+            </mat-icon>
+        </button>
+
+
+            </div>  
+      </mat-toolbar>
+  <hr style="background-color: lightslategray;">
+
+  <mat-sidenav-container class="example-container">
+      
+    <mat-sidenav #sidenav mode="side" style="width: 20%;">
+        <mat-nav-list class="navigationlist">
+            <mat-list>
+  
+              
+      <!-- <button mat-menu-item>Employee</button>
+      <button mat-menu-item>Customer</button>
+      <button mat-menu-item>Customer Address</button>
+      <button mat-menu-item>Product</button>
+      <button mat-menu-item>Shop Product</button>
+      <button mat-menu-item>Order List</button>
+
+    -->
+        <button mat-raised-button style="text-align: center;" class="compose">
+            <mat-icon style="margin-left: -20px;">
+                add
+            </mat-icon>
+            <span style="text-align: center;">Compose</span>
+        </button>
+                <!-- <div class="width">
+ -->                  <button class="button1" mat-flat-button style="margin-top: 10px; width:150px;border-radius: 20px;" routerLink="/dashboard" routerLinkActive="active" 
+ 
+ (click)="isInbox = !isInbox" [class.inbox]="isInbox">
+                    <mat-icon>
+                      inbox
+                      </mat-icon>  
+                    <span style="margin-left: 20px;">Inbox</span>
+                  </button>
+                <!-- </div>
+ -->  
+                <!-- <div class="width"> -->
+                    <button class="button1" mat-flat-button style=" width:150px;margin-left: 5px;border-radius: 20px;" routerLink="/dashboard" routerLinkActive="active"
+                    
+                    (click)="isStarred = !isStarred" [class.starred]="isStarred" >
+                      <mat-icon>
+                        star
+                        </mat-icon>  
+                    <span style="margin-left: 20px;">Starred</span>  
+                                    </button>
+                  <!-- </div> -->
+    
+                  <!-- <div class="width"> -->
+                    <button class="button1" mat-flat-button style=" width:150px;margin-left: 5px;border-radius: 20px;" routerLink="/dashboard" routerLinkActive="active">
+                      <mat-icon>
+                        watch_later
+                        </mat-icon>  
+                        <span style="margin-left: 10px;">Snoozed</span>
+                    </button>
+                  <!-- </div> -->
+      
+                  <!-- <div class="width"> -->
+                    <button class="button1" mat-flat-button style=" width:150px;margin-left: 10px;border-radius: 20px;" routerLink="/dashboard" routerLinkActive="active">
+                      <mat-icon style="margin-left: -20px;">
+                        send
+                        </mat-icon>  
+                      <span style="margin-left: 15px;">Send</span>
+                    </button>
+                  <!-- </div> -->
+      
+
+                  <!-- <div class="width"> -->
+                    <button class="button1" mat-flat-button style=" width:150px;margin-left: 10px;border-radius: 20px;" routerLink="/dashboard" routerLinkActive="active">
+                      <mat-icon>
+                        drafts
+                        </mat-icon>  
+                      <span style="margin-left: 30px;">Drafts</span>
+                    </button>
+                  <!-- </div> -->
+
+                  <!-- <div class="width"> -->
+                    <button class="button1" mat-flat-button style=" width:150px;margin-left: 10px;border-radius: 20px;" routerLink="/dashboard" routerLinkActive="active">
+                      <mat-icon>
+                        label
+                        </mat-icon>  
+                      <span style="margin-left: 10px;">Unwanted</span>
+                    </button>
+                  <!-- </div> -->
+
+                  <!-- <div class="width"> -->
+                    <button class="button1" mat-flat-button style=" width:150px;margin-left: 0px;border-radius: 20px;" routerLink="/dashboard" routerLinkActive="active"
+                    (click)="more()">
+                      <mat-icon>
+                        arrow_drop_down
+                        </mat-icon>  
+                      <span *ngIf="!check" style="margin-left: 25px;">More</span>
+                      <span *ngIf="check" style="margin-left: 25px;">Less</span>
+                    </button>
+                  <!-- </div> -->
+      
+                  <!-- <div class="width"> -->
+                   <div *ngIf="check">
+                    <button class="button1" mat-flat-button style=" width:150px;margin-left: 15px;border-radius: 20px;" routerLink="/dashboard" routerLinkActive="active">
+                        <mat-icon>
+                          label_important
+                          </mat-icon>  
+                        <span style="margin-left: 20px;">Important</span>
+                      </button>
+                    <!-- </div> -->
+  
+                    <!-- <div class="width"> -->
+                      <button class="button1" mat-flat-button style=" width:150px;margin-left: 10px;border-radius: 20px;" routerLink="/dashboard" routerLinkActive="active">
+                        <mat-icon>
+                          chat
+                          </mat-icon>  
+                        <span style="margin-left: 40px;">Chats</span>
+                      </button>
+                    <!-- </div> -->
+        
+                    <!-- <div class="width"> -->
+                      <button class="button1" mat-flat-button style=" width:150px;margin-left: 10px;border-radius: 20px;" routerLink="/dashboard" routerLinkActive="active">
+                        <mat-icon>
+                          schedule_send
+                          </mat-icon>  
+                        <span style="margin-left: 15px;">Scheduled</span>
+                      </button>
+                    <!-- </div> -->
+  
+                    <!-- <div class="width"> -->
+                      <button class="button1" mat-flat-button style=" width:150px;margin-left: 10px;border-radius: 20px;" routerLink="/dashboard" routerLinkActive="active">
+                        <mat-icon>
+                          mail
+                          </mat-icon>  
+                        <span style="margin-left: 30px;">All Mail</span>
+                      </button>
+                    <!-- </div> -->
+        
+        
+                    <!-- <div class="width"> -->
+                      <button class="button1" mat-flat-button style=" width:150px;margin-left: 10px;border-radius: 20px;" routerLink="/dashboard" routerLinkActive="active">
+                        <mat-icon>
+                          report
+                          </mat-icon>  
+                        <span style="margin-left: 40px;">Spam</span>
+                      </button>
+                    <!-- </div> -->
+  
+                    
+                      <button class="button1" mat-flat-button style=" width:150px;margin-left: 10px;border-radius: 20px;" routerLink="/dashboard" routerLinkActive="active">
+                        <mat-icon>
+                          delete
+                          </mat-icon>  
+                        <span style="margin-left: 55px;">Bin</span>
+                      </button>
+                    
+                      <button class="button1" mat-flat-button style=" width:200px;margin-left: 10px;border-radius: 20px;" routerLink="/dashboard" routerLinkActive="active">
+                          <mat-icon>
+                            settings
+                            </mat-icon>  
+                          <span style="margin-left: 25px;">Manage Labelss</span>
+                        </button>
+                  
+                        
+                        <button class="button1" mat-flat-button style=" width:200px;margin-left: 10px;border-radius: 20px;" routerLink="/dashboard" routerLinkActive="active">
+                          <mat-icon>
+                            add
+                            </mat-icon>  
+                          <span style="margin-left: 15px;">Create New Labels</span>
+                        </button>
+                
+                   </div>
+                
+  
+              
+            </mat-list>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content" style="width: 20%;">   
+      <router-outlet></router-outlet>
+  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+             </mat-sidenav-content>
+  </mat-sidenav-container>
+  
+    

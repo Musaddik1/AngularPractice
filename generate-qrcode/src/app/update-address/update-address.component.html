@@ -1,0 +1,36 @@
+<div>
+    <div class="change" >
+       
+        <div><label for="email">Email :</label>
+            <mat-form-field style="margin-left: 10px;">
+                <input matInput type="text" [(ngModel)]="email" >
+            </mat-form-field>
+        </div>
+        <div>
+            <label for="mobile">mobile :</label>
+            <mat-form-field style="margin-left: 10px;">
+                <input matInput type="text" [(ngModel)]="mobile" >
+            </mat-form-field>
+        </div>
+        <div>
+            <label for="address">address :</label>
+            <mat-form-field style="margin-left: 10px;">
+                <input matInput type="text" [(ngModel)]="address" >
+            </mat-form-field>
+        </div>
+        <div>
+            <label for="landmark">landmark :</label>
+            <mat-form-field >
+                <input matInput type="text" [(ngModel)]="landmark" >
+            </mat-form-field>
+        </div>
+        <div>
+            <label for="pin">Pin code :</label>
+            <mat-form-field style="margin-left: 10px;">
+                <input matInput type="text" [(ngModel)]="pincode" >
+            </mat-form-field>
+        </div>
+    <button mat-raised-button color="primary" (click)="update()">update</button>
+        
+    </div>
+</div>

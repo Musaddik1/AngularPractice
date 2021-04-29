@@ -1,0 +1,28 @@
+.main{
+    justify-content: center;
+    display: flex;
+}
+.card{
+    width: 40%;
+    height: 50vh;
+    margin-top: 90px;
+}
+.login{
+    background-color: grey;
+    font-family: 'Lato';
+    height: 30px;
+    font-style: normal;
+    font-size: x-large;
+}
+
+.tool{
+    margin-left: -15px;
+    margin-top: -30px;
+    width: 577px;
+}
+
+input{
+    width: 90%;
+    height: 30px;
+    margin-top: 10px;
+}

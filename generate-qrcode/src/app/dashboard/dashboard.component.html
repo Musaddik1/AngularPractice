@@ -1,0 +1,131 @@
+<mat-toolbar color="primary">
+    <!-- <button mat-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+       </mat-menu> -->
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon matTooltip="menu">menu</mat-icon>
+  </button>
+    
+     <span>Simple CRM</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>home</mat-icon>
+    </button>
+    <span>Welcome Musaddik Shaikh</span>
+  
+    
+      <button mat-flat-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" style="margin-left: 580px;color: white;"
+      [routerLink]="['addEmployee']"  routerLinkActive="active">
+        <mat-icon>account_circle</mat-icon>
+        <span>Register</span>
+      </button>
+  
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>shopping_cart</mat-icon>
+      </button>
+  
+      <button mat-flat-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" style="color: white;"
+      [routerLink]="['login']"  routerLinkActive="active">
+        <mat-icon>lock</mat-icon>
+        <span>Login</span>
+      </button>
+  
+      
+      
+    
+    
+   
+  </mat-toolbar>
+  <mat-sidenav-container class="example-container">
+      
+    <mat-sidenav #sidenav mode="side" style="width: 15%;">
+        <mat-nav-list class="navigationlist">
+            <mat-list>
+  
+              
+      <!-- <button mat-menu-item>Employee</button>
+      <button mat-menu-item>Customer</button>
+      <button mat-menu-item>Customer Address</button>
+      <button mat-menu-item>Product</button>
+      <button mat-menu-item>Shop Product</button>
+      <button mat-menu-item>Order List</button>
+    -->
+                <div class="width">
+                  <button mat-flat-button style="margin-left: 10px;" routerLink="/dashboard" routerLinkActive="active">
+                    <mat-icon><span class="material-icons">
+                      dashboard
+                      </span></mat-icon>  
+                    Employee List
+                  </button>
+                </div>
+  
+                <div class="width">
+                  <button mat-flat-button style="margin-left: 10px;" [routerLink]="['addEmployee']"  routerLinkActive="active">
+                    <mat-icon><span class="material-icons">
+                      person_add
+                      </span></mat-icon>  
+                    Register
+                  </button>
+                </div>
+  
+                <div class="width">
+                  <button mat-flat-button style="margin-left: 10px;">
+                    <mat-icon><span class="material-icons">
+                      face
+                      </span></mat-icon>  
+                      Customer
+                  </button>
+                </div>
+  
+                <div class="width">
+                  <button mat-flat-button style="margin-left: 10px;"
+                  [routerLink]="['address']"  routerLinkActive="active">
+                    <mat-icon><span class="material-icons">
+                      place
+                      </span></mat-icon>  
+                      Customer Address
+                  </button>
+                </div>
+  
+  
+                <div class="width">
+                  <button mat-flat-button style="margin-left: 10px;">
+                    <mat-icon><span class="material-icons">
+                      home
+                      </span></mat-icon>  
+                      Product
+                  </button>
+                </div>
+  
+                <div class="width">
+                  <button mat-flat-button style="margin-left: 10px;">
+                    <mat-icon><span class="material-icons">
+                      shop
+                      </span></mat-icon>  
+                      Shop Products
+                  </button>
+                </div>
+  
+                <div class="width">
+                  <button mat-flat-button style="margin-left: 10px;">
+                    <mat-icon><span class="material-icons">
+                      list
+                      </span></mat-icon>  
+                      Order List
+                  </button>
+                </div>
+  
+  
+              
+            </mat-list>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">   
+      <router-outlet></router-outlet>
+  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+             </mat-sidenav-content>
+  </mat-sidenav-container>
+     

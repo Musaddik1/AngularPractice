@@ -1,0 +1,23 @@
+.main{
+    justify-content: center;
+    display: flex;
+}
+
+.card{
+background-color: rgb(57, 70, 80);
+width: 50%;
+height: 20vh;
+margin-top: 30px;
+}
+
+.title{
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Lato';
+    font-size: x-large;
+}
+button{
+    background-color: rgb(13, 176, 240);
+    color: white;
+}

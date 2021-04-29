@@ -1,0 +1,42 @@
+<!-- <div class="message">
+  <h1>Send Message</h1>
+  <hr style="color: blueviolet;">
+</div>
+<div class="name">
+  <label >Name:</label>
+  <input style="margin-left: 62px;" type="text" name="Name" placeholder="Name" required>
+</div>
+<div class="email">
+  <label >Email:</label>
+  <input style="margin-left: 62px;" type="text" name="Email" placeholder="Email" required>
+
+</div>
+
+<div class="mobile">
+  <label >Mobile:</label>
+  <input style="margin-left: 55px;" type="text" name="Mobile" placeholder="Mobile" required>
+</div>
+<div class="country">
+  <label>Country:</label>
+    <select matNativeControl required [formControl]="selectFormControl" style="margin-left: 48px;">
+      <option label="--select something --"></option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+  
+</div>
+<button mat-raised-button color="primary">Send Message</button>
+ -->
+ <mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <h4><a routerLink="employees" class="nav-link" routerLinkActive="active">Employee List</a></h4>
+    <h4><a routerLink="add" class="nav-link" routerLinkActive="active">Add Employee</a></h4>
+  </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-drawer-container class="example-container">
+   <mat-drawer-content>
+    <router-outlet>Hello</router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
+  

@@ -1,0 +1,29 @@
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+
+    height: 80vh;
+    width: 30%;
+    margin-top: 15px;
+    }
+.email{
+
+    margin-left: 40px;
+    margin-top: 30px;
+    flex: 1 0 auto;
+    
+}
+button{
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+/* .md-dialog-container {
+    
+    width: 400px;
+    height: 495px
+}
+ */

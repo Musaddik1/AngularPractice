@@ -1,0 +1,75 @@
+.search{
+    justify-content: center;
+    display:flex;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.card{
+    justify-content: center;
+    display: flex;
+    width: 600px;
+    height: 20px;
+}
+
+.input{
+    width: 90%;
+    height: 30px;
+    outline: none;
+    border: none;
+}
+
+.example-container 
+{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+  
+
+ .button1{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;          
+} 
+.width{
+    margin-top: 5px;
+    font-family: 'Lato';
+    font-size: large;
+    
+    border-radius: 20px;
+}
+
+.customers{
+    font-family: 'Lato';
+    font-size: x-large;
+    margin: 30px;
+        
+}
+.list{
+    margin-left: 50px;
+    font-size: large;
+    font-family: 'Lato';
+}
+
+
+
+
+.compose{
+    border-radius: 30px;
+    width: 130px;
+    margin-left: 20px;
+    height: 50px;
+    
+}
+
+.inbox{
+    background-color:rgb(253, 193, 193);
+    color: rgb(231, 17, 17);
+}
+.starred{
+    background-color:lightgray;
+}

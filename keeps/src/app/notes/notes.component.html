@@ -1,0 +1,21 @@
+
+<app-create-note></app-create-note>
+
+<div class="mainCard" >
+    
+  
+  <mat-list role="list" >
+    <mat-list-item role="listitem" *ngFor="let item of notes" class="list">
+      <mat-card>
+        
+        <div (click)="openDialog(item)">
+            <p style="white-space: pre;">{{item.title}}</p>
+            <p style="height: auto;"> {{item.description}}</p>
+           
+        </div>
+        <app-icon></app-icon>
+          </mat-card>
+    </mat-list-item>
+     </mat-list>
+  
+</div>

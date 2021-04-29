@@ -1,0 +1,144 @@
+<mat-toolbar style="background-color: white;">
+
+    <button mat-icon-button>
+        <mat-icon class="material-icons-outlined"  (click)="sidenav.toggle()" routerLink="home" routerLinkActive="active">
+            menu
+        </mat-icon>
+    </button>
+    <img style="margin-left: 10px;width: 40px;" src="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png" alt="">
+    <span style="margin-left: 10px;font-family: 'Lato';color: rgb(87, 86, 86);font-size: larger;">Keep</span>
+
+    <mat-card class="card" (click)="isGrey = !isGrey" [class.grey]="isGrey"> 
+        <div style="margin-top:-11px">
+            <button mat-icon-button style="margin-top: -50px;">
+                <mat-icon class="material-icons-outlined">search</mat-icon>
+            </button>
+            
+        </div>
+        <div   class="input" style="margin-top: -47px;font-family: 'Lato';font-size: larger;">
+            <input type="text" placeholder="Search">
+        </div>
+        <div *ngIf="isGrey" style="margin-left: 570px;
+        margin-top: -39px;">
+            <button mat-icon-button class="material-icons-outlined">
+                <mat-icon>
+                    close
+                </mat-icon>
+            </button>
+        </div>
+    </mat-card>
+    <button mat-icon-button style="margin-left: 180px;">
+        <mat-icon class="material-icons-outlined">
+            refresh
+        </mat-icon>
+    </button>
+
+    <button mat-icon-button style="margin-left: 20px;" routerLink="grid" routerLinkActive="active" (click)="onGrid()">
+        <mat-icon class="material-icons-outlined" *ngIf="grid">
+                grid_view  
+        </mat-icon>
+        <mat-icon class="material-icons-outlined" *ngIf="!grid">
+            dns  
+    </mat-icon>
+    
+    </button>
+    <button mat-icon-button style="margin-left: 20px;">
+        <mat-icon class="material-icons-outlined">settings</mat-icon>
+    </button>
+
+    <button mat-icon-button style="margin-left: 70px;">
+        <mat-icon class="material-icons-outlined">
+            apps
+        </mat-icon>
+    </button>
+    <button mat-icon-button style="margin-left: 10px;">
+        <mat-icon class="material-icons-outlined">
+            person
+        </mat-icon>
+    </button>
+</mat-toolbar>
+<hr>
+
+<mat-sidenav-container class="example-container">
+      
+    <mat-sidenav #sidenav mode="side" style="width: 15%;outline: none;border: none;">
+        <mat-nav-list class="navigationlist">
+            <mat-list>
+  
+              
+      <!-- <button mat-menu-item>Employee</button>
+      <button mat-menu-item>Customer</button>
+      <button mat-menu-item>Customer Address</button>
+      <button mat-menu-item>Product</button>
+      <button mat-menu-item>Shop Product</button>
+      <button mat-menu-item>Order List</button>
+    -->
+                <!-- <div class="width">
+                  <button mat-flat-button style="margin-left: 10px;" routerLink="/dashboard" routerLinkActive="active">
+                    <mat-icon><span class="material-icons">
+                      dashboard
+                      </span></mat-icon>  
+                    Employee List
+                  </button>
+                </div>
+ -->
+                <button mat-flat-button class="button" routerLink="home" routerLinkActive="active">
+                    <mat-icon style="background-color: white;margin-left: -50px;">
+                        <span class="material-icons-outlined">
+                            lightbulb
+                            </span>
+                    </mat-icon>
+                    <span style="margin-left: 30px;">Notes</span>
+                </button>
+
+                <button mat-flat-button class="button" routerLink="reminder" routerLinkActive="active">
+                    <mat-icon style="background-color: white;margin-left: -25px;">
+                        <span class="material-icons-outlined">
+                            notifications
+                            </span>
+                    </mat-icon>
+                    <span style="margin-left: 30px;">Reminder</span>
+                </button>
+
+                <button mat-flat-button class="button" (click)="openDialog()">
+                    <mat-icon style="background-color: white;margin-left: -15px;">
+                        <span class="material-icons-outlined">
+                            mode_edit
+                            </span>
+                    </mat-icon>
+                    <span style="margin-left: 30px;">Edit Labels</span>
+                </button>
+  
+
+                <button mat-flat-button class="button" routerLink="archive" routerLinkActive="active">
+                    <mat-icon style="background-color: white;margin-left: -40px;">
+                        <span class="material-icons-outlined">
+                            archive
+                            </span>
+                    </mat-icon>
+                    <span style="margin-left: 30px;">Archive</span>
+                </button>
+
+
+                <button mat-flat-button class="button" routerLink="bin" routerLinkActive="active">
+                    <mat-icon style="background-color: white;margin-left: -70px;">
+                        <span class="material-icons-outlined">
+                            delete
+                            </span>
+                    </mat-icon>
+                    <span style="margin-left: 30px;">Bin</span>
+                </button>
+  
+                
+  
+              
+            </mat-list>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">   
+      <router-outlet></router-outlet>
+  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+             </mat-sidenav-content>
+  </mat-sidenav-container>
+     

@@ -22,6 +22,8 @@ import { ScopandletComponent } from './scopandlet/scopandlet.component';
 import { SetsComponent } from './sets/sets.component';
 import { TemplateStringsComponent } from './template-strings/template-strings.component';
 import { WeakMapAndWeakSetComponent } from './weak-map-and-weak-set/weak-map-and-weak-set.component';
+import { Practice1Component } from './practice1/practice1.component';
+
 
 
 
@@ -39,7 +41,8 @@ import { WeakMapAndWeakSetComponent } from './weak-map-and-weak-set/weak-map-and
     ScopandletComponent,
     SetsComponent,
     TemplateStringsComponent,
-    WeakMapAndWeakSetComponent
+    WeakMapAndWeakSetComponent,
+    Practice1Component
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { DestructuringComponent } from './destructuring/destructuring.component'
 import { ListComponent } from './list/list.component';
 import { MapsComponent } from './maps/maps.component';
 import { ParametersComponent } from './parameters/parameters.component';
+import { Practice1Component } from './practice1/practice1.component';
 import { ScopandletComponent } from './scopandlet/scopandlet.component';
 import { SetsComponent } from './sets/sets.component';
 import { TemplateStringsComponent } from './template-strings/template-strings.component';
@@ -25,7 +26,8 @@ const routes: Routes = [
   {path:"scopeandlet",component:ScopandletComponent},
   {path:"sets",component:SetsComponent},
   {path:"template_strings",component:TemplateStringsComponent},
-  {path:"weakmap_weakset",component:WeakMapAndWeakSetComponent}
+  {path:"weakmap_weakset",component:WeakMapAndWeakSetComponent},
+  {path:"practice1",component:Practice1Component}
 ];
 
 @NgModule({

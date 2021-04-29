@@ -1,0 +1,17 @@
+<app-create-note></app-create-note>
+<mat-grid-list cols="3" rowHeight="2:1" >
+    <mat-grid-tile *ngFor="let note of notes">
+        <mat-card>
+        
+            <div (click)="openDialog(note)"> 
+                <p>{{note.title}}</p>
+                <p> {{note.description}}</p>
+               
+            </div>
+            <app-icon></app-icon>
+              </mat-card>
+    
+    </mat-grid-tile>
+    
+    
+  </mat-grid-list>

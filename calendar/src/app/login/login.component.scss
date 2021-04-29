@@ -1,0 +1,23 @@
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+
+    height: 50vh;
+    width: 30%;
+    margin-top: 50px;
+}
+.email{
+
+    margin-left: 40px;
+    margin-top: 30px;
+    flex: 1 0 auto;
+    
+}
+button{
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 150px;
+}

@@ -1,0 +1,18 @@
+<div style="height: 30px;">
+    <div>
+        <input class="title" matInput type="text" name="title" id="title" [(ngModel)]="title">
+    </div>
+    <div >
+        <input class="description" type="text" name="description" id="description" [(ngModel)]="description">
+    </div>
+    <app-icon style="float: left;"></app-icon>
+    <button mat-icon-button>
+        <mat-icon>undo</mat-icon>
+    </button>
+    <button mat-icon-button>
+        <mat-icon>redo</mat-icon>
+    </button>
+    <button mat-flat-button style="margin-left: 10px;">
+        close
+    </button>
+</div>

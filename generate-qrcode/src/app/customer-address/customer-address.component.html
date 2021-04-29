@@ -1,0 +1,35 @@
+<div class="main">
+    <mat-card class="card">
+        <div class="change" >
+            <div><label for="name">Name :</label>
+                {{address.name}}
+                <div style="margin-left: 360px;margin-top: -39px;position: absolute;">
+                    <button mat-icon-button (click)="openDialog()"> 
+                            <mat-icon>launch</mat-icon>
+                                      </button>
+                </div>
+            </div>
+            <div><label for="email">Email :</label>
+                {{address.email}}
+            </div>
+            <div>
+                <label for="mobile">mobile :</label>
+                {{address.mobile}}
+            </div>
+            <div>
+                <label for="address">address :</label>
+                {{address.address}}
+            </div>
+            <div>
+                <label for="landmark">landmark :</label>
+                {{address.landmark}}
+            </div>
+            <div>
+                <label for="pin">Pin code :</label>
+                {{address.pincode}}
+            </div>
+        
+            
+        </div>
+    </mat-card>
+</div>

@@ -1,0 +1,57 @@
+<div>
+    <button mat-icon-button style="margin-left: 10px;">
+        <mat-icon class="material-icons-outlined" >
+            notifications
+        </mat-icon>
+    </button>
+    <button mat-icon-button style="margin-left: 10px;">
+        <mat-icon class="material-icons-outlined">
+            person_add
+        </mat-icon>
+    </button>
+    <button mat-icon-button style="margin-left: 10px;">
+        <mat-icon class="material-icons-outlined">
+            palette
+        </mat-icon>
+    </button>
+
+    <button mat-icon-button style="margin-left: 10px;">
+        <mat-icon class="material-icons-outlined">
+            image
+        </mat-icon>
+    </button>
+
+    <button mat-icon-button style="margin-left: 10px;">
+        <mat-icon class="material-icons-outlined">
+            archive
+        </mat-icon>
+    </button>
+
+    <button mat-icon-button [matMenuTriggerFor]="more_option" style="margin-left: 10px;">
+        <mat-icon class="material-icons-outlined">
+            more_vert
+        </mat-icon>
+    </button>
+</div>
+
+<mat-menu #more_option="matMenu" [overlapTrigger]="false">
+    <button mat-menu-item >
+        Delete Notes
+    </button>
+
+    <button mat-menu-item>
+        Add label
+    </button>
+    <button mat-menu-item>
+        Add drawing
+    </button>
+    <button mat-menu-item>
+        Make a copy
+    </button>
+    <button mat-menu-item>
+        Show tick boxes
+    </button>
+    <button mat-menu-item>
+        Copy to Google docs
+    </button>
+</mat-menu>

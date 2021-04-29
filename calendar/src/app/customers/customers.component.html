@@ -1,0 +1,60 @@
+<div class="customers">
+    <span>Customers</span>
+</div>
+
+<div class="list">
+    <span style="margin-left: 30px;"><button mat-button (click)="gridView()">
+            <mat-icon>grid_view</mat-icon>Card View
+        </button></span>
+    <span style="margin-left: 30px;"><button mat-button (click)="listView()">
+            <mat-icon>list_view</mat-icon>List View
+        </button></span>
+    <span style="margin-left: 30px;"><button mat-button routerLink="/customers">
+            <mat-icon>map_view</mat-icon>Map View
+        </button></span>
+    <span style="margin-left: 30px;"><button mat-button (click)="openDialog()">
+            <mat-icon>add</mat-icon>New Customer
+        </button></span>
+    <div style="float: right;">
+        <label for="">Filter:</label>
+        <input matInput style="margin-right:210px;">
+    </div>
+</div>
+<div *ngIf="grid">
+    <mat-grid-list cols="4"  rowHeight="130px" class="grid">
+        <mat-grid-tile *ngFor="let customer of customers">
+            <div class="layout">
+                
+                <div class="name">{{customer.name}}</div>
+                <div ><img class="img" src="https://img.icons8.com/metro/26/000000/day-view.png" style="float: left;"/></div>
+                <div style="text-align: right;padding-right: 5px;margin-top: 5px;">{{customer.mobile}}</div>
+                <div style="text-align: right;padding-right: 5px;">{{customer.username}}</div>  
+                <div style="text-align: right;padding-right: 5px;"><a routerLink="/order-detail" >View Orders</a> </div>
+            </div>
+        </mat-grid-tile>
+        
+      </mat-grid-list>
+    
+</div> 
+
+<div *ngIf="list">
+    <mat-list role="list"  *ngFor="let customer of customers" >
+         
+        
+        <!-- <mat-list-item role="listitem" > -->
+            <div class="listview">
+                
+            <div class="name">{{customer.name}}</div>
+            <div ><img class="img" src="https://img.icons8.com/metro/26/000000/day-view.png" style="float: left;"/></div>
+            <div style="text-align: right;padding-right:5px;">{{customer.mobile}}</div>
+            <div style="text-align: right;padding-right:5px;">{{customer.username}}</div>  
+            <div style="text-align: right;padding-right:5px;"><a href="" >View Orders</a> </div>
+        </div>
+        
+    <!-- </mat-list-item> -->
+    
+      
+      </mat-list>
+      
+</div>
+  

@@ -1,0 +1,21 @@
+<div class="main">
+    <mat-card class="card">
+        <p class="tool" style="margin-top: -16px;">
+            <mat-toolbar>
+              <span style="font-family: 'Lato';font-size: x-large;">Login</span>
+            </mat-toolbar>
+          </p>
+        <mat-label style="font-family: 'Lato';font-size: large;">Username <span style="color: red;">*</span></mat-label>
+        <div class="input">
+            <input matInput type="text" required placeholder="username">
+        </div>
+        <div style="margin-top: 10px;"><mat-label style="font-family: 'Lato';font-size: large;margin-top: 20px;">Password <span style="color: red;">*</span></mat-label></div>
+        <div class="input">
+            <input matInput type="password" required placeholder="Password">
+        </div>
+        <div style="margin-top: 20px;">
+            <button mat-flat-button color="primary">Login</button>
+            <button mat-flat-button  style="margin-left: 20px;" routerLink="/register">Register</button>
+        </div>
+    </mat-card>
+</div>

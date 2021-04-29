@@ -1,0 +1,46 @@
+<div class="main">
+    
+<mat-card class="card">
+    <h2 mat-dialog-title style="text-align: center;margin-left: -20px;font-family: 'Lato';">REGISTERATION</h2>
+    <div class="email">
+        <mat-form-field appearance="outline" style="width: 90%;height: 15px;font-family: 'Lato';">
+            <mat-label>First Name</mat-label>
+            <input matInput type="text" placeholder="First Name" [(ngModel)]="customer.firstName">
+        </mat-form-field>
+    </div>
+    <div class="email">
+        <mat-form-field appearance="outline" style="width: 90%;height: 15px;font-family: 'Lato';">
+            <mat-label>Last Name</mat-label>
+            <input matInput type="text" placeholder="Last Name" [(ngModel)]="customer.lastName">
+        </mat-form-field>
+    </div>
+    
+    <div class="email">
+        <mat-form-field appearance="outline" style="width: 90%;height: 15px;font-family: 'Lato';">
+            <mat-label>Email</mat-label>
+            <input matInput type="text" placeholder="Email" [(ngModel)]="customer.email">
+        </mat-form-field>
+    </div>
+    
+    <div class="email">
+        <mat-form-field appearance="outline" style="width: 90%;height: 15px;font-family: 'Lato';">
+            <mat-label>Mobile No</mat-label>
+            <input matInput type="text" placeholder="mobile" [(ngModel)]="customer.mobile">
+        </mat-form-field>
+    </div>
+    
+    <div class="email">
+        <mat-form-field appearance="outline" style="width: 90%;height: 15px;font-family: 'Lato';">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="password" [(ngModel)]="customer.password">
+        </mat-form-field>
+    </div>
+    
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-raised-button color="primary" (click)="register()">REGISTER</button>
+</mat-card>
+<mat-dialog-actions align="end" style="margin-bottom: 10px;">
+  
+</mat-dialog-actions>
+
+</div>
